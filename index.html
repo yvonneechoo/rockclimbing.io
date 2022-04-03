@@ -1,63 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-	<link rel="stylesheet" href="css/styles.css">
-    <title>Welcome to Bedok Reservoir Park</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href=""></a>HOME</li>
+                    <li><a href=""></a>ABOUT</li>
+                    <li><a href=""></a>COURSE</li>
+                    <li><a href=""></a>BLOG</li>
+                    <li><a href=""></a>CONTACT</li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-<ul class="side_bar">
-  <li><a class="active" href="index.html">Home Page</a></li>
-<hr>
-  <li><a href="subpages/page2.html">History of Bedok Reservoir Park</a></li>
-<hr>
-  <li><a href="subpages/page3.html">Fun things to do</a></li>
-<hr>
-  <li><a href="subpages/page4.html">Food and Beverage</a></li>
-<hr>
-  <li><a href="subpages/page5.html">How to get there</a></li>
-<hr>
-</ul>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>
+                Squeeeee <br> Squeeeee
+            </p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
 
-<div class="main_page_header_background">
-  <h2> WELCOME TO BEDOK RESERVOIR PARK</h2>
-</div>
+<!-- Course -->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div class="main_page_img_section">
-  <h2 style ="font-size: 150% " > Introducing Bedok Reservoir Park </h2>
-</div>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+            </p>
+        </div>
+    </div>
+</section>
 
-<div class="main_page_img">
-  <img src="img/bedokreservoirphoto.jpg" alt="Bedok Reservoir Park" width="800" height="500">
-</div>
+<!-- Campus -->
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div class="main_page_img_text">
-  <p> ~ A place filled with sweat and laughter ~ </p>
-</div>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png" alt="London">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png" alt="New York">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png" alt="Washington">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div>
-  <iframe class="embed_video" width="800" height="500" frameborder="0"
-  src="https://www.youtube.com/embed/BbCe7R-tSt8">
-  </iframe>
-</div>
+<!-- Facilities -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div class="main_page_img_text">
-  <p> ~~~ Introducing Bedok Reservoir Park ~~~ </p>
-</div>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png" alt="library">
+            <h3>Wrold Class Library</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png" alt="basketball">
+            <h3>Largest Playground</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png" alt="cafeteria">
+            <h3>Tasty and Healthy Food</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+            </p>
+        </div>
+    </div>
+</section>
 
-<div class="main_page_img_section">
-  <h2 style ="font-size: 150% " > Overview of Bedok Reservoir Park </h2>
-</div>
+<!-- Testimonials -->
+<section class="testimonials">
+    <h1>What our student says</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<div class="main_page_img_2">
-  <img src="img/amenities.jpg" alt="Amenities" width="800" height="500">
-</div>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg" alt="user1">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+                </p>
+                <h3>Christine Brown</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg" alt="user1">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus. Vivamus dapibus, augue eget suscipit vulputate, orci nibh pellentesque risus, auctor imperdiet magna purus et diam.
+                </p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="main_page_img_text">
-  <p> ~ Amenities in Bedok Reservoir Park ~ </p>
-</div>
+<!-- Call to Action -->
+<section class="cta">
+    <h1>Enroll for our various online courses <br> anywhere from the world</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
 
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate consectetur orci sed luctus. <br> Aliquam velit arcu, pharetra sed nisl at, rhoncus porta nisi. Pellentesque at ullamcorper ligula. Duis et libero quis justo rhoncus cursus.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+<!-- Javascript for toggle menu -->    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
 
 </body>
 </html>
