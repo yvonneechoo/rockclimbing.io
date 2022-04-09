@@ -1,0 +1,1459 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/page-0-home/homepage.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
+    url(../images/top3-rock-climbing-header.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+}
+
+nav {
+  display: flex;
+  padding: 2% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  filter: brightness(0) invert(1);
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  color: #fff;
+}
+
+.nav-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box h2 {
+  font-size: 20px;
+  margin-top: 0.5%;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .text-box h1 {
+    font-size: 62px;
+  }
+
+  .text-box h2 {
+    font-size: 16px;
+  }
+
+  .text-box p{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 36px;
+  }
+  .text-box p{
+    text-align: center;
+    padding: 10px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/* top 3 header provider introduction */
+.providers-intro {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.providers-intro h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.providers-intro p {
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.providers-intro-row {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.providers-intro-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.providers-intro-col img {
+  width: 100%;
+  display: block;
+
+}
+
+.providers-intro-layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.providers-intro-layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.providers-intro-layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+.providers-intro-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .providers-intro h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .providers-intro p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+
+  .providers-intro-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+
+  .providers-intro-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 16px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .providers-intro h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .providers-intro p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+  
+  .providers-intro-row {
+    flex-direction: column;
+  }
+
+  .providers-intro-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 24px;
+  }
+
+  .providers-intro-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 24px;
+  }
+}
+
+/* header intro */
+.header-family-friendly {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/page-0-home/family-rock-climbing-header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.header-family-friendly h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .header-family-friendly h1 {
+    font-size: 24px;
+  }
+}
+
+.header-advanced {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/page-0-home/advanced-rock-climbing-header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.header-advanced h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .header-advanced h1 {
+    font-size: 24px;
+  }
+}
+
+/* text heading */
+.text-heading {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.text-heading h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.text-heading img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-heading p {
+  font-size: 24px;
+  padding-top: 2%;
+}
+
+.text-heading div p .fa {
+  color: #f44336;
+}
+
+
+@media (max-width: 1200px) {
+  .text-heading img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .text-heading img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-heading p {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+}
+
+/* button - find out more */
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 0.5s;
+}
+
+.red-btn {
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+}
+
+.red-btn:hover {
+  color: #fff;
+}
+
+
+/* introduction to rock climbing */
+.rock-climbing-intro {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.rock-climbing-intro h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.rock-climbing-intro div ul li{
+  font-size: 20px;
+}
+
+.rock-climbing-intro img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rock-climbing-intro p {
+  font-size: 20px;
+  padding-top: 2%;
+  text-align: justify;
+}
+
+.rock-climbing-intro div p .fa {
+  color: #f44336;
+}
+
+@media (max-width: 1200px) {
+  .rock-climbing-intro img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rock-climbing-intro div ul li{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .rock-climbing-intro img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rock-climbing-intro div ul li{
+    font-size: 16px;
+  }
+
+  .rock-climbing-intro p {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+}
+
+/* Introduction Image Section */
+.rock-climbing-intro-img-section {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.rock-climbing-intro-img-section h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.rock-climbing-intro-img-section p {
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.rock-climbing-intro-img-section-row {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  /*flex-direction: column;*/
+}
+
+.rock-climbing-intro-img-section-col {
+  flex-basis: 20%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.rock-climbing-intro-map-section-col {
+  flex-basis: 45%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rock-climbing-intro-img-section-col img {
+  width: 100%;
+  display: block;
+}
+
+.rock-climbing-intro-img-section-layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.rock-climbing-intro-img-section-layer:hover {
+  background: rgba(226, 0, 19, 0.40);
+}
+
+.rock-climbing-intro-img-section-layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 30px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+.rock-climbing-intro-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  .rock-climbing-intro-img-section {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .rock-climbing-intro-img-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .rock-climbing-intro-img-section p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+
+  .rock-climbing-intro-img-section-row {
+    flex-direction: column;
+  }
+
+  .rock-climbing-intro-img-section-col {
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rock-climbing-intro-img-section-col img {
+    width: 50%;
+    display: block;
+  }
+
+  .rock-climbing-intro-img-section-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 24px;
+  }
+
+  .rock-climbing-intro-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size:24px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .rock-climbing-intro-img-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .rock-climbing-intro-img-section p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+  
+  .rock-climbing-intro-img-section-row {
+    flex-direction: column;
+  }
+
+  .rock-climbing-intro-img-section-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+
+  .rock-climbing-intro-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 20px;
+  }
+}
+
+
+
+/* climb central page */
+.climb-central-description {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.climb-central-description h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.climb-central-description div ul li{
+  font-size: 20px;
+}
+
+.climb-central-description img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.climb-central-description iframe {
+  width: 1000px;
+  height: 640px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.climb-central-description p {
+  font-size: 20px;
+  padding-top: 2%;
+}
+
+.climb-central-description div p .fa {
+  color: #f44336;
+}
+
+@media (max-width: 1200px) {
+  .climb-central-description img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .climb-central-description div ul li{
+    font-size: 18px;
+  }
+
+  .climb-central-description iframe {
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .climb-central-description img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .climb-central-description iframe {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .climb-central-description div ul li{
+    font-size: 16px;
+  }
+
+  .climb-central-description p {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+}
+
+/* Climb Central Image Section */
+.climb_central-img-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.climb_central-img-section h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.climb_central-img-section p {
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.climb_central-img-section-row {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  /*flex-direction: column;*/
+}
+
+.climb_central-img-section-col {
+  flex-basis: 45%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.climb_central-map-section-col {
+  flex-basis: 45%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.climb_central-img-section-col img {
+  width: 100%;
+  display: block;
+}
+
+.climb_central-img-section-layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.climb_central-img-section-layer:hover {
+  background: rgba(226, 0, 19, 0.40);
+}
+
+.climb_central-img-section-layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 30px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 30px;
+}
+
+.climb_central-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media (max-width: 1600px) {
+  .climb_central-img-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .climb_central-img-section p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+
+  .climb_central-img-section-row {
+    flex-direction: column;
+  }
+
+  .climb_central-img-section-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+
+  .climb_central-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size:24px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .climb_central-img-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .climb_central-img-section p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+  
+  .climb_central-img-section-row {
+    flex-direction: column;
+  }
+
+  .climb_central-img-section-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+
+  .climb_central-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 20px;
+  }
+}
+
+/* GROUND UP */
+.ground-up-description {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.ground-up-description h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.ground-up-description div ul li{
+  font-size: 20px;
+}
+
+.ground-up-description img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ground-up-description iframe {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ground-up-description p {
+  font-size: 20px;
+  padding-top: 2%;
+}
+
+.ground-up-description div p .fa {
+  color: #f44336;
+}
+
+@media (max-width: 1200px) {
+  .ground-up-description img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ground-up-description div ul li{
+    font-size: 18px;
+  }
+
+  .ground-up-description iframe {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .ground-up-description img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ground-up-description iframe {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ground-up-description div ul li{
+    font-size: 16px;
+  }
+
+  .ground-up-description p {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+}
+
+/* Climb Central Image Section */
+.ground-up-img-section {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.ground-up-img-section h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.ground-up-img-section p {
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.ground-up-img-section-row {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.ground-up-img-section-col {
+  flex-basis: 20%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.ground-up-map-section-col {
+  flex-basis: 20%;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ground-up-img-section-col img {
+  width: 100%;
+  display: block;
+}
+
+.ground-up-img-section-layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.ground-up-img-section-layer:hover {
+  background: rgba(226, 0, 19, 0.40);
+}
+
+.ground-up-img-section-layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 30px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 30px;
+}
+
+.ground-up-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media (max-width: 1600px) {
+  .ground-up-img-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .ground-up-img-section p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+
+  .ground-up-img-section-row {
+    flex-direction: column;
+  }
+
+  .ground-up-img-section-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+
+  .ground-up-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size:24px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .ground-up-img-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 0%;
+  }
+  
+  .ground-up-img-section p {
+    font-size: 16px;
+    padding-bottom: 5%;
+  }
+  
+  .ground-up-img-section-row {
+    flex-direction: column;
+  }
+
+  .ground-up-img-section-layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+
+  .ground-up-img-section-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 20px;
+  }
+}
+
+/* reviews */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 30px;
+  cursor: pointer;
+  display:inline-block;
+}
+
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonial-col video {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  display: block;
+  width: 60%;
+}
+
+.testimonial-col p {
+  padding: 0;
+  text-align: justify;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonial-col .fa {
+  color: #f44336;
+}
+
+@media (max-width: 1200px) {
+  .testimonial-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .testimonial-col video {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    display: block;
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonial-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
+  .testimonial-col video {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart-o {
+  color: #f44336;
+}
+
+
+/* about us content */
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+}
+
+.red-btn {
+  border: 2px solid #f44336;
+  background: transparent;
+  color: #f44336;
+  border-radius: 10px;
+}
+
+.red-btn:hover {
+  color: #fff;
+}
+
+
+/* About the author */
+.about-the-author-description {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.about-the-author-description h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.about-the-author-description div ul li{
+  font-size: 20px;
+}
+
+.about-the-author-description img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-the-author-description p {
+  font-size: 20px;
+  padding-top: 2%;
+  text-align: justify;
+}
+
+.about-the-author-description div p .fa {
+  color: #f44336;
+}
+
+@media (max-width: 1200px) {
+  .about-the-author-description img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-the-author-description div ul li{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-the-author-description img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-the-author-description div ul li{
+    font-size: 16px;
+  }
+
+  .about-the-author-description p {
+    font-size: 16px;
+    padding-top: 2%;
+  }
+}
+
